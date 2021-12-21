@@ -1869,7 +1869,7 @@ class AMP_Style_Sanitizer_Test extends TestCase {
 		);
 		$sanitizer->sanitize();
 		$actual_stylesheets = array_values( $sanitizer->get_stylesheets() );
-		$this->assertEmpty( $actual_stylesheets[0] );
+		$this->assertEquals( '', $actual_stylesheets[0] );
 	}
 
 	/**

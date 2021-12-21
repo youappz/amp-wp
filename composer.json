@@ -17,10 +17,9 @@
     "ampproject/amp-toolbox": "0.9.3",
     "cweagans/composer-patches": "~1.0",
     "fasterimage/fasterimage": "1.5.0",
-    "sabberworm/php-css-parser": "dev-master#bfdd976"
+    "sabberworm/php-css-parser": "8.4.0"
   },
   "require-dev": {
-    "ampproject/php-css-parser-install-plugin": "*",
     "automattic/vipwpcs": "^2.2",
     "civicrm/composer-downloads-plugin": "^3.0",
     "dealerdirect/phpcodesniffer-composer-installer": "0.7.1",
@@ -43,12 +42,6 @@
     "ext-intl": "Enables use of idn_to_utf8() to convert punycode domains to UTF-8 for use with an AMP Cache.",
     "ext-mbstring": "Used by PHP-CSS-Parser when working with stylesheets."
   },
-  "repositories": [
-    {
-      "type": "path",
-      "url": "./php-css-parser-install-composer-plugin"
-    }
-  ],
   "minimum-stability": "dev",
   "prefer-stable": true,
   "autoload": {
@@ -94,9 +87,9 @@
         "Fix ReflectionParameter warnings on PHP 8": "patches/phpunit-mock-objects.patch"
       },
       "sabberworm/php-css-parser": {
-        "1. Add additional validation for size unit <https://github.com/sabberworm/PHP-CSS-Parser/pull/193>": "https://github.com/sabberworm/PHP-CSS-Parser/compare/3bc5ded67d77a52b81608cfc97f23b1bb0678e2f%5E...468da3441945e9c1bf402a3340b1d8326723f7d9.patch",
-        "2. Validate name-start code points for identifier <https://github.com/sabberworm/PHP-CSS-Parser/pull/185>": "https://github.com/sabberworm/PHP-CSS-Parser/compare/d42b64793f2edaffeb663c63e9de79069cdc0831%5E...113df5d55e94e21c6402021dfa959924941d4c29.patch",
-        "3. Fix parsing CSS selectors which contain commas <https://github.com/westonruter/PHP-CSS-Parser/pull/1>": "https://github.com/westonruter/PHP-CSS-Parser/compare/master...10a2501c119abafced3e4014aa3c0a3453a86f67.patch"
+        "1. Add additional validation for size unit <https://github.com/sabberworm/PHP-CSS-Parser/pull/350>": "https://github.com/sabberworm/PHP-CSS-Parser/compare/e41d2140031d533348b2192a83f02d8dd8a71d30...b1f74798a7d21d0e6f6402ee8a06c92c7f92fae5.diff",
+        "2. Validate name-start code points for identifier <https://github.com/westonruter/PHP-CSS-Parser/pull/2>": "https://github.com/westonruter/PHP-CSS-Parser/compare/e41d2140031d533348b2192a83f02d8dd8a71d30...a49bd92c35e9bbbaaca23cf33874a65dd485c30b.diff",
+        "3. Fix parsing CSS selectors which contain commas <https://github.com/westonruter/PHP-CSS-Parser/pull/1>": "https://github.com/westonruter/PHP-CSS-Parser/compare/e41d2140031d533348b2192a83f02d8dd8a71d30...935ea79e0389e672a9deadf9f366e6faab9110ba.diff"
       }
     }
   },
